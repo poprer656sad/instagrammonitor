@@ -82,7 +82,7 @@ class instagram():
 
     def send_bio_webhook(self):
         webhook = DiscordWebhook(
-            url='https://discordapp.com/api/webhooks/748692569449300039/KhN3dWgIl3aNQJZuhahDHRzBJ3T8FbhqcYd-C4-3mCq2hJI152YY6u7vdaoepxKSkfpO',
+            url='webhooklink',
             username= self.account)
         embed = DiscordEmbed(title='new website', description='', color=4254719,
                              url='https://www.instagram.com/{}/'.format(self.account))
@@ -95,7 +95,7 @@ class instagram():
 
     def send_post_webhook(self, posturl):
         webhook = DiscordWebhook(
-            url='https://discordapp.com/api/webhooks/748692569449300039/KhN3dWgIl3aNQJZuhahDHRzBJ3T8FbhqcYd-C4-3mCq2hJI152YY6u7vdaoepxKSkfpO',
+            url='webhooklink',
             username= self.account)
         embed = DiscordEmbed(title='new post', description='', color=4254719,
                              url='https://www.instagram.com/p/{}/'.format(self.lastpost))
